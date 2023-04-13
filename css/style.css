@@ -1,0 +1,40 @@
+/* color variables */
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+img {
+    width: 75rem;
+    height: 55rem;
+    object-fit: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 4rem auto;
+    border: 1px solid turquoise;
+}
+
+.item.active {
+    display: block;
+}
+
+.item {
+    display: none;
+
+}
+
+.next,
+.prev {
+    font-size: 3rem;
+    cursor: pointer;
+}
