@@ -19,8 +19,8 @@ const next = document.querySelector(".next");
 const images = [
     {
         image: '01.webp',
-        title: 'Marvel\'s Spiderman Miles Morale',
-        text: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
+        title: 'Marvel\'s Spiderman Miles Morales',
+        text: 'Experience the rise of Miles Morales as the new hero masters incredible and explosive new powers, to become Spider-Man.',
     }, {
         image: '02.webp',
         title: 'Ratchet & Clank: Rift Apart',
@@ -51,7 +51,7 @@ for ( let i = 0; i < images.length; i++ ) {
     // the item element will contain ...
 
     item.innerHTML = `
-        <img src="./images/${images[i].image}" alt="superheroes">
+        <img src="./images/${images[i].image}" alt="${images[i].title}">
         <div class="absolute">
             <h1>${images[i].title}</h1>
             <p>${images[i].text}</p>
