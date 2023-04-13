@@ -16,6 +16,7 @@ img {
     width: 75rem;
     height: 55rem;
     object-fit: cover;
+    position: relative;
 }
 
 .container {
@@ -37,4 +38,11 @@ img {
 .prev {
     font-size: 3rem;
     cursor: pointer;
+}
+
+.absolute {
+    color: white;
+    position: absolute;
+    left: 10rem;
+    bottom: 3rem;
 }

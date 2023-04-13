@@ -52,6 +52,10 @@ for ( let i = 0; i < images.length; i++ ) {
 
     item.innerHTML = `
         <img src="./images/${images[i].image}" alt="superheroes">
+        <div class="absolute">
+            <h1>${images[i].title}</h1>
+            <p>${images[i].text}</p>
+        </div>
     `;
 
     console.log(item);
