@@ -35,6 +35,8 @@
 
 .thumbnails-container {
     height: 20vh;
+    width: 93%;
+    margin: 1rem auto;
 }
 
 .thumbnails-container img {
