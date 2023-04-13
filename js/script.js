@@ -4,6 +4,10 @@
 
 let items = document.querySelector(".items");
 
+// get the .thumbnails-container classed element
+
+let thumbnailsContainer = document.querySelector(".thumbnails-container");
+
 // get the.prev classed element from html
 
 const prev = document.querySelector(".prev");
@@ -67,6 +71,23 @@ for ( let i = 0; i < images.length; i++ ) {
     // give the item element the class ".item"
 
     item.classList.add('item');
+
+    // create element
+
+    let thumbnail = document.createElement("div");
+
+    thumbnail.innerHTML = `
+    <img src="./images/${images[i].image}" alt="${images[i].title}">
+    `
+
+    // append the thumbnails elements to thumbnailsContainer
+
+    thumbnailsContainer.append(thumbnail);
+
+    // add css classes to thumbnail elements
+
+    thumbnail.classList.add('col', 'thumbnail');
+
 }
 
 // add class .active to the first .item classed element
