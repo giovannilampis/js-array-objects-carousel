@@ -51,7 +51,7 @@ for ( let i = 0; i < images.length; i++ ) {
     // the item element will contain ...
 
     item.innerHTML = `
-        <img src="./images/${images[i]}" alt="superheroes">
+        <img src="./images/${images[i].image}" alt="superheroes">
     `;
 
     console.log(item);
